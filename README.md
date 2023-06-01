@@ -25,13 +25,13 @@ Note: Python 3.7 is required to run our code.
 
 
 ## Data preparation
-To run the code, annotations and detection features for the COCO dataset are needed. Please download the annotations file [annotations.zip](https://pan.baidu.com/s/1i4joLltyirMFEiYAy5G0mA), passward：rgsdand extract it.
+To run the code, annotations for the COCO dataset are needed. Please download the annotations file [annotations.zip](https://pan.baidu.com/s/1i4joLltyirMFEiYAy5G0mA), passward：rgsd and extract it.
 
-Detection features are computed with the code provided by [1]. To reproduce our result, please download the COCO features file [coco_detections.hdf5](https://drive.google.com/open?id=1MV6dSnqViQfyvgyHrmAT_lLpFbkzp3mx) (~53.5 GB), in which detections of each image are stored under the `<image_id>_features` key. `<image_id>` is the id of each COCO image, without leading zeros (e.g. the `<image_id>` for `COCO_val2014_000000037209.jpg` is `37209`), and each value should be a `(N, 2048)` tensor, where `N` is the number of detections. 
+Detection features are computed with the code provided by [1]. To reproduce our result, please download the COCO features file (https://pan.baidu.com/s/1C6LwpbyJylkTbYk9srljfA ) (~53.5 GB) passward rgsd, in which detections of each image are stored under the `<image_id>` key. `<image_id>` is the id of each COCO image, without leading zeros (e.g. the `<image_id>` for `COCO_val2014_000000037209.jpg` is `37209`), and each value should be a `(N, 2048)` tensor, where `N` is the number of detections. 
 
 
 ## Evaluation
-To reproduce the results reported in our paper, download the pretrained model file [meshed_memory_transformer.pth](https://drive.google.com/file/d/1naUSnVqXSMIdoiNz_fjqKwh9tXF7x8Nx/view?usp=sharing) and place it in the code folder.
+To reproduce the results reported in our paper, download the pretrained model file [Incorporating_Grid_and_Region.pth](https://pan.baidu.com/s/1FDZFojPnejMxJ-s8t8aknw) passward rgsd and place it in the code folder.
 
 Run `python test.py` using the following arguments:
 
@@ -73,4 +73,4 @@ python train.py --exp_name m2_transformer --batch_size 50 --m 40 --head 8 --warm
 </p>
 
 #### References
-[1] P. Anderson, X. He, C. Buehler, D. Teney, M. Johnson, S. Gould, and L. Zhang. Bottom-up and top-down attention for image captioning and visual question answering. In _Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition_, 2018.
+[1] Nguyen, V.-Q., Suganuma, M., Okatani, T.: Grit: Faster and better image captioning transformer using dual visual features. In: Computer Vision–ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part XXXVI, pp. 167–184 (2022). Springer
