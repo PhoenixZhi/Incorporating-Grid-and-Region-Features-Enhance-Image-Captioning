@@ -7,7 +7,7 @@ Please cite with the following BibTeX:
 
 ```
 <p align="center">
-  <img src="images/m2.png" alt="Overview" width="320"/>
+  <img src="images/overview.png" alt="Overview" width="320"/>
 </p>
 
 ## Environment setup
