@@ -7,11 +7,6 @@ from .example import Example
 from .utils import nostdout
 from pycocotools.coco import COCO as pyCOCO
 
-# Dataset 类是数据集的基础类，它可以读取 Example 类型的数据，并提供一个 collate_fn 函数来将一个 batch 中的 Example 对象转换为一组 tensors。
-# ValueDataset 类是 Dataset 类的子类，它接收一个额外的字典参数 dictionary，将 examples 中具有相同键的 Example 对象分组在一起，以实现某些样本之间存在依赖关系的情况下的数据加载。
-# DictionaryDataset 类是 Dataset 类的子类，它根据 key_fields 参数将 examples 中具有相同键的 Example 对象分组在一起，以实现 key-value 数据对的数据加载。
-# PairedDataset 类是 Dataset 类的子类，它用于加载配对的数据，例如图像-文本对数据集，其中每个 example 包含一个图像和一个文本描述。它可以将 examples 中的所有图像和文本分别分组到不同的 Dataset 中，以便于数据加载。
-
 class Dataset(object):
     def __init__(self, examples, fields):
         self.examples = examples
