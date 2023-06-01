@@ -27,7 +27,7 @@ Note: Python 3.7 is required to run our code.
 ## Data preparation
 To run the code, annotations for the COCO dataset are needed. Please download the annotations file [annotations.zip](https://pan.baidu.com/s/1i4joLltyirMFEiYAy5G0mA), passward：rgsd and extract it.
 
-Detection features are computed with the code provided by [1]. To reproduce our result, please download the COCO features file (https://pan.baidu.com/s/1C6LwpbyJylkTbYk9srljfA ) (~53.5 GB) passward rgsd, in which detections of each image are stored under the `<image_id>` key. `<image_id>` is the id of each COCO image, without leading zeros (e.g. the `<image_id>` for `COCO_val2014_000000037209.jpg` is `37209`), and each value should be a `(N, 2048)` tensor, where `N` is the number of detections. 
+Detection features are computed with the code provided by [1]. To reproduce our result, please download the COCO features file (https://pan.baidu.com/s/1C6LwpbyJylkTbYk9srljfA ) (~64.0 GB) passward rgsd, in which detections of each image are stored under the `<image_id>` key. `<image_id>` is the id of each COCO image, without leading zeros (e.g. the `<image_id>` for `COCO_val2014_000000037209.jpg` is `37209`), and each value should be a `(N, 2048)` tensor, where `N` is the number of detections. 
 
 
 ## Evaluation
