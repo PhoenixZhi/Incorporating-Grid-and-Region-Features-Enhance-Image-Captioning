@@ -1,5 +1,5 @@
 # Incorporating-Grid-and-Region-Features-Enhance-Image-Captioning
-This repository contains the reference code for the paper _[Incorporating Grid and Region Features Enhance Image Captioning]()_ (CVPR 2020).
+This repository contains the reference code for the paper _[Incorporating Grid and Region Features Enhance Image Captioning].
 
 Please cite with the following BibTeX:
 
