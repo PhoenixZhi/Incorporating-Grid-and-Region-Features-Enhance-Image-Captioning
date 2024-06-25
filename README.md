@@ -67,10 +67,5 @@ For example, to train our model with the parameters used in our experiments, use
 ```
 python train.py --exp_name m2_transformer --batch_size 50 --m 40 --head 8 --warmup 10000 --features_path /path/to/features --annotation_folder /path/to/annotations
 ```
-
-<p align="center">
-  <img src="images/results.png" alt="Sample Results" width="850"/>
-</p>
-
 #### References
 [1] Nguyen, V.-Q., Suganuma, M., Okatani, T.: Grit: Faster and better image captioning transformer using dual visual features. In: Computer Vision–ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part XXXVI, pp. 167–184 (2022). Springer
